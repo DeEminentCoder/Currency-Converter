@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css">
+   <script src="./bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+   <script src="./bootstrap-5.2.2-dist/js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+</head>
+<style>
+/*  */
+@media screen and (max-width: 600px) {
+    #container {
+        font-size: xx-small;
+        position: relative;
+    }
+    #left-containers {
+        position: relative;
+        left: -80px;
+        top: -20px;
+        /* padding: 10px; */
+    }
+    #left-containers button {
+        position: relative;
+        width: 340px;
+        height: 100px;
+    }
+    #right-container {
+        position: absolute;
+        top: 450px;
+        left: 40px;
+    }
+    #right-contents {
+        /* position: absolute; */
+        max-width: 400px;
+    }
+    #inputContainer {
+        margin: 0;
+        /* background-color: black; */
+        /* max-width: 10px; */
+    }
+
+    #dollarInput {
+        /* position: absolute; */
+        max-width: 160px;
+        /* top: 200px; */
+        /* left: 30px; */
+    }
+    #nairaInput {
+        /* position: absolute; */
+        max-width: 160px;
+        /* top: 200px; */
+        /* left: 30px; */
+    }
+
+    #bmDollarInput {
+        /* position: absolute; */
+        max-width: 160px;
+        /* top: 200px; */
+        /* left: 30px; */
+    }
+    #bmNairaInput {
+        /* position: absolute; */
+        max-width: 160px;
+        /* top: 200px; */
+        /* left: 30px; */
+    }
+    #officialButton {
+        position: relative;
+        /* max-width: 110px; */
+        /* margin-left: -100px; */
+        /* background-color: brown; */
+    }
+    
+     #officialButtonA {
+        position: absolute;
+        left: -50px;
+    }
+    #officialButtonB {
+        position: relative;
+        left: 170px;
+        color: #fff;
+        background-color: rgba(54, 12, 93, 0.562);
+        /* max-width: 160px; */
+    }
+    }
+
+
+
+
+
+    h6 {
+        margin-left: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    button:hover {
+        filter: brightness(95%);
+        /* filter: contrast(90%); */
+    }
+</style>
+<body style="background-image: url(./images/5.jpg); background-repeat: no-repeat;">
+    <!-- <h1 class="mt-2 display-" style="position: ; filter: opacity(10%); left: 40%; top: 47%; letter-spacing: 2px;">My Currency Converter</h1> -->
+    <div id="container" style="display: flex;">
+        <div id="left-containers" class="shadow" style=" margin: 30px 20px 30px 150px; border: 2px solid; border-radius: 10px; background-color: aliceblue;" >
+            <a href="./converter.html">
+                <button class="py-4 px-5 bg-secondary" style="margin: 0; border: none; color: #fff; border-left: 5px solid orange; border-top: 5px solid cadetblue; border-top-right-radius: 10px; border-top-left-radius: 10px; font-size: 1.5em;"> DOLLAR <br> - <br> NAIRA</button>
+            </a>
+            <br>
+            <a href="./converter-pound.html">
+                <button class="py-4 px-5 " style="margin: 0; border: none; border-left: 5px solid cadetblue; font-size: 1.5em;">DOLLAR <br> - <br> POUND</button>
+            </a>
+            <br>
+            <a href="./converter-euro.html">
+                <button class="py-4 px-5 bg-secondary" style="margin: 0; border: none; color: #fff; border-left: 5px solid orange; font-size: 1.5em;">DOLLAR <br> - <br> EURO</button>
+            </a>
+            <br>
+            <a href="./converter-yen.html">
+                <button class="py-4 px-5 " style="margin: 0; border: none; border-left: 5px solid cadetblue; border-bottom: 6px solid orange; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; font-size: 1.5em;">DOLLAR <br> - <br> YEN</button>
+            </a>
+        </div>
+
+        <div id="right-container">
+            <div id="right-contents" class="shadow" style="padding: 25px; margin: 30px auto; border: 2px solid; border-radius: 10px; width: 800px; background-color: rgba(45, 42, 41, 0.478); color: #fff;">
+                <marquee behavior="" direction="" style="font-size: 0.7em; letter-spacing: 10px;">CONVERT YOU MONEY WITH THE MOST HONEST COMPANY IN NIGERIA</marquee>
+                <h3 class="display-6" style="text-align: center; font-weight: 400;">The Spanish Official Conversion Rate</h3>
+                <div id="inputContainer" class="d-flex gap-5 mt-2" style="justify-content: space-around;">
+                    <div >
+                        <h6>Convert </h6>
+                        <p class="display-6" style="position: absolute; margin-top: 9px; margin-left: 8px; color: rgb(123, 122, 122);">$</p>
+                        <input class="shadow mb-2 display-6" style="border: 1px solid; border-radius: 5px; width: 260px; padding: 7px 35px; " type="text" placeholder="1" value="1" id="dollarInput">
+                        <h6>to Pound </h6>
+
+                    </div>
+                    <div >
+                        <h6>Convert </h6>
+                        <p class="display-6" style="position: absolute; margin-top: 9px; margin-left: 8px; color: rgb(123, 122, 122);">N</p>
+                        <input class="shadow mb-2 display-6" style="border: 1px solid; border-radius: 5px; width: 260px; padding: 7px 35px;"  type="text" placeholder="439.95" value="439.95" id="nairaInput">
+                        <h6>to Dollar </h6>
+                    </div>
+                </div>
+                <div id="officialButton" class="ms-5" style="display: flex; gap: 280px;">
+                    <button id="officialButtonA" class="py-3 px-5 border" style="margin: 0 0%; border-radius: 5px; font-size: 1.5em; filter: drop-shadow(1px 1px 1px);" onclick="convert()">convert</button>
+                    <button id="officialButtonB" class="py-3 px-5 border" style="margin: 0 0%; border-radius: 5px; font-size: 1.5em; filter: drop-shadow(1px 1px 1px);" onclick="convertReverse()">Convert</button>
+                </div>
+
+                <hr>
+
+                <h3 class="display-6" style="text-align: center; font-weight: 400;">The Black Market Conversion Rate</h3>
+                <div id="inputContainer" class="d-flex gap-5 mt-2" style="justify-content: space-around;">
+                    <div >
+                        <h6>Convert </h6>
+                        <p class="display-6" style="position: absolute; margin-top: 9px; margin-left: 8px; color: rgb(123, 122, 122);">$</p>
+                        <input class="shadow mb-2 display-6" style="border: 1px solid; border-radius: 5px; width: 260px; padding: 7px 35px; " type="text" placeholder="1" value="1" id="bmDollarInput">
+                        <h6>to Pound </h6>
+
+                    </div>
+                    <div >
+                        <h6>Convert </h6>
+                        <p class="display-6" style="position: absolute; margin-top: 9px; margin-left: 8px; color: rgb(123, 122, 122);">N</p>
+                        <input class="shadow mb-2 display-6" style="border: 1px solid; border-radius: 5px; width: 260px; padding: 7px 35px;"  type="text" placeholder="800" value="800" id="bmNairaInput">
+                        <h6>to Dollar </h6>
+                    </div>
+                </div>
+                <div id="officialButton" class="ms-5" style="display: flex; gap: 280px;">
+                    <button id="officialButtonA" class="py-3 px-5 border" style="margin: 0 0%; border-radius: 5px; font-size: 1.5em; filter: drop-shadow(1px 1px 1px);" onclick="blackMarket()">Convert</button>
+                    <button id="officialButtonB" class="py-3 px-5 border" style="margin: 0 0%; border-radius: 5px; font-size: 1.5em; filter: drop-shadow(1px 1px 1px);" onclick="blackMarketReverse()">Convert</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function convert() {
+            var converter = document.getElementById("dollarInput").value
+            document.getElementById("nairaInput").value = 439.95 * document.getElementById("dollarInput").value
+            document.getElementById("nairaInput").style.color = "blue"
+        }
+
+        function convertReverse() {
+            var converter = document.getElementById("nairaInput").value
+            document.getElementById("dollarInput").value = 0.00227 * document.getElementById("nairaInput").value
+            document.getElementById("dollarInput").style.color = "blue"
+        }
+
+        function blackMarket() {
+            var converter = bmDollarInput.value
+            bmNairaInput.value = 800 * bmDollarInput.value
+            bmNairaInput.style.color = "blue"
+        }
+
+        function blackMarketReverse() {
+            var converter = bmNairaInput.value
+            bmDollarInput.value = 0.00460 * bmNairaInput.value
+            bmDollarInput.style.color = "blue"
+        }
+    </script>
+</body>
+</html>
